@@ -1,0 +1,34 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base",
+    "group:symfony",
+  ],
+  "prConcurrentLimit": 2,
+  "rangeStrategy": "bump",
+  "packageRules": [
+    {
+      "matchManagers": ["composer"]
+    },
+    {
+      "matchManagers": ["npm"]
+    },
+    {
+      "matchPackagePrefixes": ["stylelint"],
+      "groupName": "Stylelint packages"
+    },
+    {
+      "matchPackageNames": ["drupal/core", "drupal/core-recommended", "drupal/core-composer-scaffold"],
+      "groupName": "Drupal Core"
+    },
+    {
+      "matchPackagePrefixes": ["gulp"],
+      "groupName": "Gulp packages"
+    },
+    {
+      "matchPackagePrefixes": ["jquery"],
+      "groupName": "jQuery packages"
+    }
+  ]
+}
+
