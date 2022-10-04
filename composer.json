@@ -11,7 +11,7 @@
     ],
     "require": {
         "php": "^7.4",
-        "drupal/config_split": "^2.0.0-rc3@beta"
+        "drupal/config_split": "2.0.0-rc4@beta"
     },
     "minimum-stability": "dev",
     "prefer-stable": true
